@@ -8,7 +8,7 @@ Make sure to fork this repository and submit a pull request with the requested t
 
 #### Python
 
-1. Create a function called "reverse()" that reverses a string.
+1. Create a function called `reverse()` that reverses a string.
 1. Write unit tests to prove that the function works.
 1. Commit/push and submit a pull request
 
