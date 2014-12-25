@@ -12,9 +12,9 @@ Make sure to fork this repository and submit a pull request with the requested t
 1. Write unit tests to prove that the function works.
 1. Commit/push and submit a pull request
 
-### Flask
+### Django/Flask
 
-1. Create a simple website that has a single form entry field with a submit button.
+1. Using either Django or Flask, create a simple website that has a single form entry field with a submit button.
 1. Submitting the form will result in the submitted text shown in reverse on the next page.
 1. Commit/push your code up to Heroku.
 1. Update the README.md file in this repository with a publicly accessible url.
