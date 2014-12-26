@@ -1,11 +1,11 @@
 ## Links
 
-| Github        | Heroku        |
-|---------------|---------------|
-| Add link here | Add link here |
-| Add link here | Add link here |
-| Add link here | Add link here |
-| Add link here | Add link here |
-| Add link here | Add link here |
-| Add link here | Add link here |
-| Add link here | Add link here |
+| Github            | Heroku            |
+|-------------------|-------------------|
+| Add link here     | Add link here     |
+| Add link here     | Add link here     |
+| Add link here     | Add link here     |
+| Add link here     | Add link here     |
+| Add link here     | Add link here     |
+| Add link here     | Add link here     |
+| Add link here     | Add link here     |
