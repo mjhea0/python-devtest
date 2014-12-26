@@ -1,8 +1,0 @@
-language: 
-  - python
-# command to install dependencies
-script:
-  - python  reverse/reverse-test.py
-branches:
-  only:
-    - master
