@@ -1,21 +1,22 @@
 ## Python Developer Test
 
-A simple test to show that a developer knows how to use basic tools and understands the basics of the Python language.
+A simple test to show that a web developer knows how to use basic tools and understands the basics of the Python language.
 
 ###  Tests
 
 Make sure to fork this repository and submit a pull request with the requested tasks completed.
 
-#### Python
+#### Part 1: Python Basics
 
 1. Create a function called `reverse()` that reverses a string.
 1. Write unit tests to prove that the function works.
-1. Commit/push and submit a pull request
+1. Add your solution (both scripts) to the "part1" folder in a new folder called *reverse_yourlastname*.
+1. Commit/push to Github and submit a pull request.
 
-### Django/Flask
+### Part 2: Web Development
 
-1. Using either Django or Flask, create a simple website that has a single form entry field with a submit button.
+1. Using either Django or Flask (or Pyramid or web2py or web.py, etc.), create a simple website that has a single form entry field with a submit button.
 1. Submitting the form will result in the submitted text shown in reverse on the next page.
 1. Commit/push your code up to Heroku.
-1. Update the README.md file in this repository with a publicly accessible url.
-1. Commit/push and submit a pull request.
+1. Update the *part2/README.md* file in this repository with the publicly accessible URL.
+1. Commit/push to Github and submit a pull request.
