@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Add your title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Title</a>
+  </div>
+</div>
+
+    
+    {% block content %}
+
+    
+    {% endblock %}
+
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row" style="text-align: center;">
+          <div class="col-md-3 col-xs-3">
+            <a href="#">Twitter</a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="#">Github</a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="#">Portfolio</a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
