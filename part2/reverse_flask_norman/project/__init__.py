@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for 
+from flask import Flask, render_template, request, redirect, url_for
 from forms import ReverseForm
 
 app = Flask(__name__)
@@ -8,22 +8,26 @@ app.config.from_object('project.config')
 def reverse(string):
     reverse_string = ""
     for i in xrange(len(string)):
-      reverse_string = reverse_string + string[(len(string)-1)-i]
+        reverse_string = reverse_string + string[(len(string)-1)-i]
     return reverse_string
 
-@app.route('/', methods=['GET','POST'])
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
     form = ReverseForm(request.form)
-    if request.method == "POST":
-        if form.validate_on_submit():
-            return redirect(url_for('rev_string', user_input=form.reverse.data))
+    if form.validate_on_submit():
+        return redirect(url_for('rev_string', user_input=form.reverse.data))
     return render_template('index.html', form=form)
 
 
 @app.route('/reversed_input/<user_input>')
 def rev_string(user_input):
     reversed_string = reverse(user_input)
-    return render_template('reversed.html',user_input=user_input, rev_input=reversed_string)
+    return render_template(
+        'reversed.html',
+        user_input=user_input,
+        rev_input=reversed_string
+    )
 
 
 @app.errorhandler(403)
