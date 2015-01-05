@@ -1,5 +1,6 @@
-*.pyc
-.DS_Store
 env
+venv
+*.pyc
+.DS_STORE
 htmlcov
 .coverage
