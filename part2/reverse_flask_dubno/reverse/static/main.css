@@ -1,0 +1,11 @@
+/* custom styles */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 400px;
+  text-align: center;
+}
