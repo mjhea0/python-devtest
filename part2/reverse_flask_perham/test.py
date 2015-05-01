@@ -31,11 +31,9 @@ class AllTests(unittest.TestCase):
         response = self.app.get('/')
         self.assertIn("Enter a string:", response.data)
 
-
     def test_submitted_word_reverses(self):
         response = self.app.post('/', data=dict(string='donkey'))
         self.assertIn("yeknod", response.data)
 
 if __name__ == "__main__":
     unittest.main()
-
