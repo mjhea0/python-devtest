@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 
 
 @app.route('/')
@@ -13,8 +13,8 @@ def get_string():
 
 @app.route('/reverse_string', methods=['POST'])
 def reverse_string():
-    str_to_reverse = request.form['str_to_reverse']
     return render_template(
         'result.html',
-        result=str_to_reverse[::-1]
+        original_str = request.form['str_to_reverse'],
+        result=request.form['str_to_reverse'][::-1]
     )
