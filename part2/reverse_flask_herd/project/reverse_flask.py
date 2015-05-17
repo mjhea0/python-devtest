@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
+
+app.config['DEBUG'] = False
 
 
 @app.route('/')
@@ -15,7 +18,3 @@ def reverse_string():
         'result.html',
         result=str_to_reverse[::-1]
     )
-
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
