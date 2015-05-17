@@ -1,1 +1,1 @@
-web: python reverse_flask.py
+web: python run.py
