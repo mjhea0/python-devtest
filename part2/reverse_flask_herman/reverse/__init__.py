@@ -4,7 +4,7 @@
 from flask import Flask, render_template, request, \
     flash, url_for, redirect
 
-from forms import ReverseStringForm
+from reverse.forms import ReverseStringForm
 
 
 ################
@@ -21,7 +21,7 @@ app.config.from_object('reverse.config')
 
 def reverse(string):
     result = ""
-    for letter in xrange(len(string), 0, -1):
+    for letter in range(len(string), 0, -1):
         result = result + string[letter-1]
     return result
 

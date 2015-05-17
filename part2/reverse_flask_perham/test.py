@@ -29,11 +29,11 @@ class AllTests(unittest.TestCase):
     # each test should start with 'test'
     def test_index_page_available(self):
         response = self.app.get('/')
-        self.assertIn("Enter a string:", response.data)
+        self.assertIn(b"Enter a string:", response.data)
 
     def test_submitted_word_reverses(self):
         response = self.app.post('/', data=dict(string='donkey'))
-        self.assertIn("yeknod", response.data)
+        self.assertIn(b"yeknod", response.data)
 
 if __name__ == "__main__":
     unittest.main()

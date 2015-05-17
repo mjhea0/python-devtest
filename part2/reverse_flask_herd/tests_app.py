@@ -33,7 +33,7 @@ class AppTest(unittest.TestCase):
             str_to_reverse=test_string)
         )
         self.assertEqual(response.status_code, 200)
-        self.assertIn(expected_string, response.data)
+        self.assertIn(expected_string, str(response.data))
 
 
 if __name__ == '__main__':

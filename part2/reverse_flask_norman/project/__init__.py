@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from forms import ReverseForm
+from project.forms import ReverseForm
 
 app = Flask(__name__)
 app.config.from_object('project.config')
@@ -7,7 +7,7 @@ app.config.from_object('project.config')
 
 def reverse(string):
     reverse_string = ""
-    for i in xrange(len(string)):
+    for i in range(len(string)):
         reverse_string = reverse_string + string[(len(string)-1)-i]
     return reverse_string
 

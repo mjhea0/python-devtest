@@ -19,26 +19,26 @@ class TestReverseCase(unittest.TestCase):
         # Ensure Flask is setup.
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn('please enter some text to reverse...', response.data)
+        self.assertIn(b'please enter some text to reverse...', response.data)
 
     def test_text_is_reversed(self):
         # Ensure the '/reversed_input/<user_input>' route works.
         response = self.app.get('/reversed_input/FooBar')
-        self.assertIn('raBooF', response.data)
+        self.assertIn(b'raBooF', response.data)
 
     def test_form_error(self):
         # Ensure error is populated correctly.
         response = self.app.post('/', data=dict(
             reverse_string='', follow_redirects=True)
         )
-        self.assertIn('This field is required', response.data)
+        self.assertIn(b'This field is required', response.data)
 
     def test_functional(self):
         # Ensure form redirects and string is reversed.
         response = self.app.post('/', data=dict(
             reverse_string="Real Python",),  follow_redirects=True)
         self.assertEqual(response.status_code, 200)
-        self.assertIn('nohtyP laeR', response.data)
+        self.assertIn(b'nohtyP laeR', response.data)
 
 
 if __name__ == '__main__':

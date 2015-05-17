@@ -1,7 +1,7 @@
 from flask_wtf import Form
-from wtforms import TextField
+from wtforms import StringField
 from wtforms.validators import DataRequired
 
 
 class ReverseForm(Form):
-    reverse = TextField('Reverse', validators=[DataRequired()])
+    reverse = StringField('Reverse', validators=[DataRequired()])

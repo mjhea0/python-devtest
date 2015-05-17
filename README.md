@@ -2,6 +2,8 @@
 
 A simple test to show that a web developer knows how to use basic tools and understands the basics of the Python language.
 
+> Make sure your code is compatible with the [latest versions](https://www.python.org/downloads/) of Python 2 and 3. Thanks!
+
 ###  Tests
 
 Make sure to fork this repository and submit a pull request with the requested tasks completed.
