@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h2>Welcome to Gary's Magic String Reverser!</h2>
+  <br>
+  <form action="{{ url_for('reverse_string') }}" method="post">
+    Enter the string to reverse:<br>
+    <input type="text" name="str_to_reverse">
+    <input type="submit" value="Reverse!">
+  </form>
+
+
+</body>
+</html>
