@@ -8,11 +8,11 @@ A simple test to show that a web developer knows how to use basic tools and unde
 
 Please fork this repository, clone it down, and then when you finish a test commit/push your code to Github and submit a pull request.
 
-Write unit tests to prove that the function works.
+Write unit tests!
 
 ### Part 1: Python Basics
 
-## String Reverse
+#### String Reverse
 
 1. Create a function called `reverse()` that reverses a string.
 1. Add your solution to the "part1/reverse-string" folder in a new folder called "reverse_yourlastname".
