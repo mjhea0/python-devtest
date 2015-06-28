@@ -31,7 +31,7 @@ Write unit tests!
 1. Update the *part2/README.md* file in this repository with the publicly accessible URL
 1. Commit/push to Github and submit a pull request.
 
-### Todo
+## Todo
 
 1. Add additional tests to part 1
 1. Add Django Test
