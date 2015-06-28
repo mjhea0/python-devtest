@@ -1,19 +1,26 @@
-## Python Developer Test
+# Python Developer Test
 
 A simple test to show that a web developer knows how to use basic tools and understands the basics of the Python language.
 
 > Make sure your code is compatible with the [latest versions](https://www.python.org/downloads/) of Python 2 and 3. Thanks!
 
-###  Tests
+##  Tests
 
-Make sure to fork this repository and submit a pull request with the requested tasks completed.
+Please fork this repository, clone it down, and then when you finish a test commit/push your code to Github and submit a pull request.
 
-#### Part 1: Python Basics
+Write unit tests to prove that the function works.
+
+### Part 1: Python Basics
+
+## String Reverse
 
 1. Create a function called `reverse()` that reverses a string.
-1. Write unit tests to prove that the function works.
-1. Add your solution (both scripts) to the "part1" folder in a new folder called "reverse_yourlastname".
-1. Commit/push to Github and submit a pull request.
+1. Add your solution to the "part1/reverse-string" folder in a new folder called "reverse_yourlastname".
+
+#### Count Vowels
+
+1. Create a function called `vowel_counter()` that takes a string as an argument and returns the sum of each vowel found.
+1. Add your solution to the "part1/vowel-counter" folder in a new folder called "counter_yourlastname".
 
 ### Part 2: Web Development with Flask
 
