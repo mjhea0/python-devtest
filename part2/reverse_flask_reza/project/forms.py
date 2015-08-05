@@ -3,6 +3,6 @@ from wtforms import StringField
 from wtforms.validators import DataRequired, Length
 
 class FormToReverse(Form):
-    string = StringField('reverse', validators=[DataRequired(), Length=(min=4)])
+    string = StringField('reverse', validators=[DataRequired(), Length(min=4)])
 
 

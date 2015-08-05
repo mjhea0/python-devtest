@@ -1,9 +1,19 @@
-{% extends "index.html" %}
+<!DOCTYPE html>
 
-{% block content %}
+<html>
 
   <div class="container">
-    <h1>Entry your posts here.</h1>
-	<form >
+  <h2>Original String:</h2>
+  <div class="output">{{ user_input }}</div>
+  
+  <h2>Reversed String:</h2>
+  <div class="output">{{ output }}</div>
+  <br>
+  <br>
+ 
+  <form action="{{ url_for('index') }}" method="post">
+    <input type="submit" value="Back!">
+  </form>
+  </div>
 
-{% endblock %}
+</html>

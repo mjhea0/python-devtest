@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+.container{
+     margin: 0 auto;
+	 text-align: left;
+	 width: 800px;
+	 position: relative;
+	 float: right;
+	 }

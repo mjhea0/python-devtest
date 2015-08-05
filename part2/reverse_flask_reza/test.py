@@ -1,16 +1,17 @@
 import unittest
 from project import app
 
-class ReverseTest(unittest.TestCase):
+class TestReverse(unittest.TestCase):
 
     def setup(self):
         app.config['WTF_CSRF_ENABLED'] = False
+        app.config['DEBUG'] = False
         self.app = app.test_client()
 
     def test_if_user_can_access_the_first_page(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'', response.data)
+        
 
     def test_if_page_redirects_and_string_is_reversed(self):
         test_string = 'Hello'
@@ -26,6 +27,11 @@ class ReverseTest(unittest.TestCase):
         response = self.app.post('/', data=dict(reverse='h', follow_redirects=True))
         self.assertIn(b'This field is required', response.data)
 
-    
+    def teardown(self):
+        app.config['WTF_CSRF_ENABLED'] = True
+        
+
+if __name__=="__main__":
+    unittest.main()
         
 
