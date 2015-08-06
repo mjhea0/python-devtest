@@ -1,14 +1,16 @@
-{% extends "index.html" %}
+<!DOCTYPE html>
 
-{% block content %}
-
-<div class="error">
-
+<html>
+  <head>
+    <title>Reversing string.</title>
+	<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	
+  </head>
+  <div class="container">
     <h1>500</h1>
     <p>Something is wrong! We are working on it!</p>
-    <p><em>Return <a href="{{url_for('home')}}">Home.</a></em></p>
+    <p><em>Return<a href="{{url_for('home')}}">Home.</a></em></p>
+  </div>
 
-</div>
-
-
-{% endblock %}
+</html>

@@ -30,10 +30,6 @@ def page_not_found(error):
 def server_error(error):
     return render_template('500.html'),500
 
-#@app.errorhandler(403)
-#def access_forbidden(error):
-    #return render_template('403.html'),403
-    
 
 if __name__=='__main__':
     app.run(debug=True)
