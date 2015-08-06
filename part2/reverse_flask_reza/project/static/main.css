@@ -1,13 +1,40 @@
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  }
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
 
-.container{
-     margin: 0 auto;
-	 text-align: left;
-	 width: 800px;
-	 position: relative;
-	 float: right;
-	 }
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.center {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* ************************************************ */
