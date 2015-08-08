@@ -1,0 +1,20 @@
+{% extends('base_template.html') %}
+
+{% block content %}
+<div class="container">
+  <div class="center">
+      <form class="" method="POST" action="">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{form.reverse(class="form-control input-lg", placeholder="Reverse this text")}}
+            {% if form.reverse.errors %} 
+                {% for error in form.reverse.errors %}
+                     {{ error }}
+                {% endfor %} 
+            {% endif %} 
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      </form>
+  </div>
+</div> <!-- /container -->
+{% endblock %}
