@@ -1,1 +1,1 @@
-web: gunicorn reverse_flask:app
+web: python reverse_flask.py
