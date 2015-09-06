@@ -1,9 +1,14 @@
 from reverse import reverse
-def reverse_test():
-    str = raw_input("Please input a string:  ")
-    str_reversed = reverse(str)
-    print str_reversed
-	
+import unittest
+
+
+class TestReverse(unittest.TestCase):
+
+    def test_reverse(self):
+        self.assertEqual(reverse('hello'), 'olleh')
+        self.assertEqual(reverse('newyork'), 'kroywen')
+        self.assertNotEqual(reverse('newyork'), 'newyork')
+
+
 if __name__ == '__main__':
-    reverse_test()	
-	
+    unittest.main()
