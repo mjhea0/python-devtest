@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Reverse Flask{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h2>Reverse a string entry</h2>
+</div>
+ <br>
+<h3>Entry by User</h3>
+<div>{{ original }} </div>
+ <br>
+ <h3>Reversed Entry</h3>
+<div>{{ transformed }} </div>
+
+<br><a href=" /">Return to entry page </a>
+
+{% endblock %}
