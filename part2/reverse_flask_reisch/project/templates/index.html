@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Welcome to Reverse-A-Tron-5000 {% endblock %}
+{% block content %}
+    <div class="reverse-input">
+    <h2>Please Enter a String to be Reversified</h2>
+    <form action="{{ url_for('index') }}" method="post">
+        {{ form.csrf_token }}
+        <p>
+            {{ form.input(placeholder="input a string here") }}
+            <span class="has-error">
+                {% if form.input.errors %}
+                {% for error in form.input.errors %}
+                {{ error }}
+                {% endfor %}
+                {% endif %}
+            </span>
+        </p>
+        <p>
+            <input class="btn btn-default" type="submit" value="Reversify">
+        </p>
+    </form>
+    <div class="reverse-output">
+        <p>Result: {{ reversed_string }}</p>
+    </div>
+    </div>
+{% endblock %}
