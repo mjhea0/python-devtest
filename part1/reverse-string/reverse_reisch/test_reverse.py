@@ -7,7 +7,7 @@ class ReverseStringTests(unittest.TestCase):
         my_string = "testing"
         my_reversed_string = "gnitset"
 
-        returned_string=reverse(my_string)
+        returned_string = reverse(my_string)
         assert my_reversed_string == returned_string
 
 if __name__ == "__main__":

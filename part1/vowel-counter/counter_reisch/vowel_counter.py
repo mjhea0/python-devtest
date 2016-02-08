@@ -1,8 +1,8 @@
-vowels=('a','e','i','o','u')
+vowels = ('a', 'e', 'i', 'o', 'u')
 
 
-def vowel_counter(some_string: str) -> int:
-    count=0
+def vowel_counter(some_string):
+    count = 0
     for letter in some_string:
         if letter in vowels:
             count += 1
