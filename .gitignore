@@ -5,3 +5,4 @@ venv
 htmlcov
 .coverage
 __pycache__
+/.idea
