@@ -4,8 +4,6 @@
 import os
 
 # import specific reverse function
-import sys
-sys.path.insert(0, '../../part1/reverse-string/reverse_afr/')
 from  reverse import reverse
 
 from flask import Flask, flash, redirect, render_template, request, url_for
