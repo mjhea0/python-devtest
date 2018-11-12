@@ -1,0 +1,15 @@
+behave==1.2.5
+Flask==0.10.1
+Flask-Bootstrap==3.3.4.1
+Flask-Session==0.2
+Flask-WTF==0.11
+gunicorn==19.3.0
+itsdangerous==0.24
+Jinja2==2.7.3
+MarkupSafe==0.23
+parse==1.6.6
+parse-type==0.3.4
+six==1.10.0
+Werkzeug==0.10.4
+wheel==0.26.0
+WTForms==2.0.2
